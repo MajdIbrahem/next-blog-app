@@ -29,7 +29,7 @@ const Navbar = () => {
                 <div className={open?"w-2/5 absolute top-12 right-0 h-full py-16 px-16 rounded bg-purple-400/50":"hidden"}>
                 <div className=' flex flex-col  items-center justify-between gap-5  text-lg font-semibold'>
                     {links.map(link => {
-                    return <NavLink item={link}/>
+                        return <NavLink item={link} key={ link.title} />
                         })}
                     
         </div>
